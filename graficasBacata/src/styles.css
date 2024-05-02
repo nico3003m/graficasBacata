@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --main: #333;
+    --textContrast: #fff;
+  }
+
+body{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
