@@ -43,6 +43,19 @@ footer {
     text-decoration: none;
     color: var(--textContrast);
 }
+h3:hover {
+    color: goldenrod;
+}
+
+li:hover{
+    color: goldenrod;
+}
+p:hover {
+    color: goldenrod;
+}
+a:hover{
+    color: goldenrod !important;
+}
 
 
 

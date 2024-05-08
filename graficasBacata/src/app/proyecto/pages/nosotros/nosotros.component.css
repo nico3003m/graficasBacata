@@ -18,7 +18,6 @@ app-footer{
 h1{
     text-align: center;
     margin-top: 1%;
-   
 }
 
 .Contenedor-info{
@@ -35,4 +34,19 @@ h1{
 }
 
 
-@media ()
+
+@media screen and (max-width: 600px) {
+    .Contenedor-info{
+        display: block;
+    }
+    .img0{
+        width: 65%;
+        margin: 15% 20% 0px ;
+        text-align: center;
+        display: block;
+     }
+     h1{
+        text-align: center;
+        display: block;
+     }
+}
