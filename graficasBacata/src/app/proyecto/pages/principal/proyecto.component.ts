@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./proyecto.component.css']
 })
 export class ProyectoComponent implements OnInit {
+img :string[]=[]
 
   constructor() { }
 
   ngOnInit(): void {
+    this.img[0] = "./../../../../assets/img/Tarjetas.png"
   }
 
 }

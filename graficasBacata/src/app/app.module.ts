@@ -7,6 +7,7 @@ import { ProyectoComponent } from './proyecto/pages/principal/proyecto.component
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { nosotrosComponent } from './proyecto/pages/nosotros/nosotros.component';
+import { CaruselComponent } from './components/carusel/carusel.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { nosotrosComponent } from './proyecto/pages/nosotros/nosotros.component'
     ProyectoComponent,
     FooterComponent,
     HeaderComponent,
-    nosotrosComponent
+    nosotrosComponent,
+    CaruselComponent
   ],
   imports: [
     BrowserModule,

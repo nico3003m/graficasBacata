@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nosotros',
-  templateUrl: './nosotros.component.html',
-  styleUrls: ['./nosotros.component.css']
+  selector: 'app-carusel',
+  templateUrl: './carusel.component.html',
+  styleUrls: ['./carusel.component.css']
 })
-export class nosotrosComponent implements OnInit {
+export class CaruselComponent implements OnInit {
   img: string[] = [];
   constructor() { }
 
