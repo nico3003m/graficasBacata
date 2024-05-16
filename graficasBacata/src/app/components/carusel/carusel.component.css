@@ -1,11 +1,12 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
     margin: 0 auto;
     overflow: hidden;
+
   }
-  
+
   .slide {
     display: flex;
     justify-content: center;
@@ -33,7 +34,7 @@
   }
   
   button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: goldenrod;
   }
   
   button:first-child {

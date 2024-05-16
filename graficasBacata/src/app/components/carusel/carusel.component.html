@@ -1,7 +1,9 @@
-<div class="carousel-container">
-    <button (click)="prevSlide()">Previous</button>
-    <div class="slide" [@slideAnimation]="currentSlideIndex">
-      <img [src]="slides[currentSlideIndex].image" alt="Slide">
-    </div>
-    <button (click)="nextSlide()">Next</button>
-  </div>
+<div class="principal-container">
+    <div class="carousel-container">
+        <button (click)="prevSlide()">Previous</button>
+        <div class="slide" [@slideAnimation]="currentSlideIndex">
+          <img [src]="slides[currentSlideIndex].image" alt="Slide">
+        </div>
+        <button (click)="nextSlide()">Next</button>
+      </div>
+</div>

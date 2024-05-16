@@ -10,6 +10,14 @@ const routes: Routes = [
     path:'infoNostros', loadChildren:()=>
     import('./proyecto/pages/nosotros/nosotros.module').then(m=>m.NosotrosModule)
   },
+  {
+    path:'servicios', loadChildren:()=>
+    import('./proyecto/pages/servicios/servicios.module').then(m=>m.ServiciosModule)
+  },
+  {
+    path:'contacto', loadChildren:()=>
+    import('./proyecto/pages/contacto/contacto.module').then(m=>m.ContactoModule)
+  },
   {path:'', pathMatch:'full', redirectTo:''},
   {path:'**', pathMatch:'full', redirectTo:''}
 ];

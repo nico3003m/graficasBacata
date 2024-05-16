@@ -10,6 +10,9 @@ import { nosotrosComponent } from './proyecto/pages/nosotros/nosotros.component'
 import { CaruselComponent } from './components/carusel/carusel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { ServiciosComponent } from './proyecto/pages/servicios/servicios.component';
+import { ContactoComponent } from './proyecto/pages/contacto/contacto.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +20,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HeaderComponent,
     nosotrosComponent,
-    CaruselComponent
+    CaruselComponent,
+   
+    ServiciosComponent,
+         ContactoComponent
   ],
   imports: [
     BrowserModule,
