@@ -1,7 +1,7 @@
 .footer-container {
     background-color: var(--main);
     color: var(--textContrast);
-    padding: 20px;
+    padding: 2vh 2vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -9,7 +9,11 @@
 
 .footer-section {
     flex: 1 1 30%;
+    display: flex;
     margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .footer-section h3 {
@@ -35,6 +39,11 @@
 .footer-section a {
     text-decoration: none;
     color: var(--textContrast);
+}
+
+.mat-list-base{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
 }
 
 .mat-nav-list a {
