@@ -1,31 +1,29 @@
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Información de contacto</h3>
-                <div class="style-container-col">
-                    <p><b>Correo:</b> <a> servicliente&#64;graficasbacata.com.co</a></p>
-                    <p><b>Teléfono:</b> 601-606-0705 ó 601-583-5878<a></a></p>
-                    <p><b>Dirección:</b> Calle 66 No. 12-04 <a></a></p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h3>Redes sociales</h3>
-                <div class="style-container-col">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <h3><a href="https://www.google.com/maps/dir//4.6525398,-74.0625449/@4.6525291,-74.065152,17z/data=!4m2!4m1!3e0?entry=ttu" target="_blank">Mapa del sitio</a></h3>
-                <ul>
-                    <li><a (click)="navigate('')">Inicio</a></li>
-                    <li><a (click)="navigate('/servicios')">Servicios</a></li>
-                    <li><a (click)="navigate('/infoNostros')">Nosotros</a></li>
-                    <li><a (click)="navigate('/contacto')">Contacto</a></li>
-                </ul>
-            </div>
+<footer class="footer-container">
+    <div class="footer-section">
+        <h3>Información de contacto</h3>
+        <div class="style-container-col">
+            <p><b>Correo:</b> <a
+                    href="mailto:servicliente@graficasbacata.com.co">servicliente&#64;graficasbacata.com.co</a></p>
+            <p><b>Teléfono:</b> 601-606-0705 ó 601-583-5878</p>
+            <p><b>Dirección:</b> Calle 66 No. 12-04</p>
         </div>
+    </div>
+    <div class="footer-section">
+        <h3>Redes sociales</h3>
+        <div class="style-container-col">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+    <div class="footer-section">
+        <h3><a href="https://www.google.com/maps/dir//4.6525398,-74.0625449/@4.6525291,-74.065152,17z/data=!4m2!4m1!3e0?entry=ttu"
+                target="_blank">Mapa del sitio</a></h3>
+        <mat-nav-list>
+            <a mat-list-item (click)="navigate('')">Inicio</a>
+            <a mat-list-item (click)="navigate('/servicios')">Servicios</a>
+            <a mat-list-item (click)="navigate('/infoNostros')">Nosotros</a>
+            <a mat-list-item (click)="navigate('/contacto')">Contacto</a>
+        </mat-nav-list>
     </div>
 </footer>

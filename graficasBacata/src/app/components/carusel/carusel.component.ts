@@ -20,26 +20,27 @@ import { trigger, transition, style, animate } from '@angular/animations';
 export class CaruselComponent implements OnInit {
   img: string[] = [];
   currentSlideIndex = 0;
-  slides = [
-    { image: './../../../../assets/img/Tarjetas.png' },
-    { image: './../../../../assets/img/Volantes.png' },
-    { image: "./../../../../assets/img/Sellos.png" },
-    { image: "./../../../../assets/img/Posillos.png" },
-    { image: "./../../../../assets/img/Cuadernos.png" },
-    { image: "./../../../../assets/img/Brochures.png" },
-
+  images = [
+    './../../../../assets/img/Tarjetas.png',
+    './../../../../assets/img/Volantes.png',
+    './../../../../assets/img/Sellos.png',
+    './../../../../assets/img/Posillos.png',
+    './../../../../assets/img/Cuadernos.png',
+    './../../../../assets/img/Brochures.png'
   ];
   constructor() { }
 
   ngOnInit(): void {
    
   }
-  nextSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex + 1) % this.slides.length;
+  currentIndex = 0;
+
+  next() {
+    this.currentIndex = (this.currentIndex + 1) % this.images.length;
   }
 
-  prevSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex - 1 + this.slides.length) % this.slides.length;
+  prev() {
+    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
   }
 
 }

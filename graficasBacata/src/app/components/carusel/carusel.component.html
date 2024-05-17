@@ -1,9 +1,13 @@
-<div class="principal-container">
-    <div class="carousel-container">
-        <button (click)="prevSlide()">Previous</button>
-        <div class="slide" [@slideAnimation]="currentSlideIndex">
-          <img [src]="slides[currentSlideIndex].image" alt="Slide">
-        </div>
-        <button (click)="nextSlide()">Next</button>
-      </div>
+<div class="carousel-container">
+  <button mat-icon-button (click)="prev()" class="prev-button">
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+  
+  <mat-card>
+    <img [src]="images[currentIndex]" alt="carousel image">
+  </mat-card>
+  
+  <button mat-icon-button (click)="next()" class="next-button">
+    <mat-icon>chevron_right</mat-icon>
+  </button>
 </div>

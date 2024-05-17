@@ -1,86 +1,61 @@
-footer {
+.footer-container {
     background-color: var(--main);
     color: var(--textContrast);
+    padding: 20px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-}
-.container{
-    padding: 2vw;
+    justify-content: space-between;
 }
 
-.row {
-    display: flex;
-    width: 96vw;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
 }
 
-.col-md-4 {
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.style-container-col {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
 }
 
-.col-md-4 ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-
-.col-md-4 ul li {
-    list-style-type: none;
-    margin: 0;
-}
-
-.col-md-4 a{
+.style-container-col a {
+    margin-right: 10px;
+    color: inherit;
     text-decoration: none;
+}
+
+.style-container-col a:hover {
+    text-decoration: underline;
     color: var(--textContrast);
 }
-h3:hover {
-    color: goldenrod;
-}
 
-li:hover{
-    color: goldenrod;
-}
-p:hover {
-    color: goldenrod;
-}
-a:hover{
-    color: goldenrod !important;
-}
-
-
-
-.style-container-col{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.style-container-col p{
-    margin: 0;
-}
-
-.style-container-col a{
+.footer-section a {
     text-decoration: none;
     color: var(--textContrast);
 }
 
+.mat-nav-list a {
+    display: block;
+    margin-bottom: 5px;
+    color: inherit;
+    text-decoration: none;
+}
 
-@media screen and (max-width: 600px) {
-    .row {
-        flex-direction: column;
+.mat-nav-list a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
     }
-    
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
