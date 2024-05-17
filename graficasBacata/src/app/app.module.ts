@@ -16,6 +16,7 @@ import { MatListModule } from '@angular/material/list';
 
 import { ServiciosComponent } from './proyecto/pages/servicios/servicios.component';
 import { ContactoComponent } from './proyecto/pages/contacto/contacto.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ContactoComponent } from './proyecto/pages/contacto/contacto.component'
     MatIconModule,
     MatCardModule,
     MatListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

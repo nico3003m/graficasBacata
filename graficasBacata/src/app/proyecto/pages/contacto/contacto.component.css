@@ -15,3 +15,81 @@ app-header{
 app-footer{
     width: 100vw;
 }
+/* Estilos para el contenedor de contacto */
+
+.contact-container{
+  display: flex;
+  font-size: medium;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+}
+p{
+  margin: 0 130px 12px;
+  display: block;
+}
+h1{
+ margin-top: 1%;
+}
+.info-contacto{
+  margin-right:10% ;
+  width: 50%;
+  margin-left: 10%;
+}
+.contact-form{
+  margin-right: 10px;
+  width: 50%;
+}
+input{
+  border-radius: 15px;
+  width: 350px;
+  height: 30px;
+}
+input::placeholder{
+  text-align: center;
+}
+b:hover{
+  color: goldenrod;
+}
+ textarea{
+  border-radius: 15px;
+  display: block;
+  width: 350px;
+ }
+label{
+  display: block;
+  margin: 8px;
+  text-align: left;
+}
+.contact-form, label,input{
+ display: block;
+}
+button{
+  background-color: rgb(42, 42, 255);
+  border-radius: 10px;
+  display: block;
+  border-color: beige;
+  width: 350px;
+  height: 30px;
+  margin-top: 10%;
+  margin-block-end: 10%;
+  color: #ffff;
+
+}
+.ubications{
+  margin: 4%;
+}
+@media (max-width: 800px) {
+  .contact-container{
+    display: block;
+    font-size: medium;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-form{
+    margin-right:10% ;
+    width: 50%;
+    margin-left: 20%;
+  }
+}

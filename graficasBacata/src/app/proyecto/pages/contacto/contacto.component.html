@@ -1,4 +1,46 @@
-<div><app-header></app-header>
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+<div>
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <h1><b>Información de Contacto</b></h1>
+  <span class="contact-container">
+    <span class="info-contacto">
+      <span>
+        <br>
+        <br>
+        <p><i class="fas fa-phone"></i>Teléfono : <br><br><b> 601-606-0705 ó 601-583-5878</b></p>
+        <br>
+        <p><i class="fas fa-envelope"></i> Correo:<br><br> <b>servicliente&#64;graficasbacata.com.co</b></p>
+        <br>
+        <p><i class="fas fa-map-marker-alt"></i> Dirección:<br><br> <b>Calle 66 No. 12-04</b></p>
+        <p></p>
+      
+      </span>
+    </span>
+    <span class="contact-form">
+      <form (ngSubmit)="onSubmit()">
+        <span>
+          <label for="name"><b></b>Nombre</label>
+          <input type="text" id="name" name="name" required placeholder="Ingrese su Nombre">
+        </span>
+        <span>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Ingrese su correo ">
+        </span>
+        <span>
+          <label for="Telefono">Número Celular </label>
+          <input type="Telefono" id="Telefono" name="Telefono" required placeholder="Ingrese su numero de Celular">
+        </span>
+        <span>
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Ingrese la idea que quiere Cotizar"></textarea>
+        </span>
+        <button type="submit">Enviar</button>
+      </form>
+    </span>
+  </span>
+  <span  class="ubications">
+    <h1 style="text-align: center;"> <b>Ubicación</b></h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6722673599716!2d-74.06494522603448!3d4.652411042076407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a45cb5284d5%3A0x8db55535551dbfb6!2sCl.%2066%20%2311-50%2C%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1715910901542!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </span>
+  <app-footer></app-footer>
 </div>

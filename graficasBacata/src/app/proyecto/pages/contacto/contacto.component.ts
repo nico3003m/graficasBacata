@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class ContactoComponent implements OnInit {
 
   constructor() { }
-
+  onSubmit() {
+    alert('Formulario enviado con éxito!');
+  }
   ngOnInit(): void {
   }
 

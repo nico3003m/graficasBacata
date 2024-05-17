@@ -19,6 +19,9 @@
 .footer-section h3 {
     margin-bottom: 10px;
 }
+a:hover{
+    color: goldenrod !important;
+}
 
 .style-container-col {
     display: flex;
