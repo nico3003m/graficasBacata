@@ -1,4 +1,19 @@
-<div><app-header></app-header>
-    <router-outlet></router-outlet>
+<div>
+    <app-header></app-header>
+    <div class="title">
+        <h1>Servicios</h1>
+    </div>
+    <div class="cards-container">
+        <mat-card class="service-card" *ngFor="let service of services">
+            <img mat-card-image [src]="service.image" alt="{{service.title}}">
+            <mat-card-content>
+                <h3>{{ service.title }}</h3>
+                <p>{{ shouldAddDots(service.description, 25, service.expanded || false) }}</p>
+                <button mat-button (click)="toggleReadMore(service)">
+                    {{ service.expanded ? 'LEER MENOS' : 'LEER MÁS' }}
+                </button>
+            </mat-card-content>
+        </mat-card>
+    </div>
     <app-footer></app-footer>
 </div>
