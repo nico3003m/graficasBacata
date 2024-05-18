@@ -7,30 +7,29 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  router: any;
 
-  constructor(private router: Router) { }
+  constructor(router:Router) {
+    this.router =router
+   }
 
   ngOnInit(): void {
-    this.menu();
+    this.menu()
   }
-
-  navigate(info: string) {
-    this.router.navigate([info]);
+  navigate(info:string) {
+    this.router.navigate([info])
   }
-
   menu() {
     const menuToggle = document.getElementById('menu-toggle') as HTMLInputElement;
     const menu = document.querySelector('.menu');
-    if (menuToggle && menu) {
-    
-      menuToggle.addEventListener('change', () => {
-        if (menuToggle.checked) {
-          menu.classList.add('active');
-        } else {
-          menu.classList.remove('active');
-        }
-      });
-    }
+    menuToggle?.addEventListener('change', function () {
+      if (menuToggle?.checked) {
+        menu?.classList.add('active');
+      } else {
+        menu?.classList.remove('active');
+      }
+    });
+
   }
 
 }

@@ -38,9 +38,6 @@ app-footer {
     width: 300px;
     margin: 20px;
 }
-button:hover{
-    color: goldenrod !important;
-  }
 
 .mat-card-image:hover{
     transform: translateY(-10px);
